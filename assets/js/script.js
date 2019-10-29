@@ -7,6 +7,8 @@ function gradeQuiz(event) {
 
     const answerKey  = ['c', 'c', 'a', 'a', 'b'],
           answers = document.querySelectorAll('input:checked');
+    if (answers.length === 0) document.querySelector('ol').className += ' incorrect';
+    
     let score = 0;
     for (var i = 0; i < answers.length; i++) {
         if (answers[i].value !== answerKey[i]) {
@@ -15,6 +17,7 @@ function gradeQuiz(event) {
             score++;
         }
     }
+    
 
     let begin = '',
         compare = '';

@@ -1,15 +1,16 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <img class="image" src="https://i6nif33omr43m6n4h1w9uvq8-wpengine.netdna-ssl.com/wp-content/uploads/so-fi-logo-1.png" />
+    
     <meta charset="utf-8">
     <title>SoFi Financial Literacy Quiz</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <div id="wrapper">
+    <img class="image" src="https://i6nif33omr43m6n4h1w9uvq8-wpengine.netdna-ssl.com/wp-content/uploads/so-fi-logo-1.png">
+    <div id="content-wrapper">
         <h1>SoFi Financial Literacy Quiz</h1>
-        <form id="quiz" onsubmit="gradeQuiz(event)">
+        <form id="quiz-form" onsubmit="gradeQuiz(event)">
             <ol class="questions">
                 <li>Imagine that the interest rate on your high-yield savings account is 2% per year and inflation is 3% per year. After 1 year, how much would you be able to buy with the money in this account?<br>
                     <input type="radio" id="question1" name="question1" value="a">
@@ -68,9 +69,16 @@
             </ol>
             <div id="results"></div>
             <div style="text-align: center">
-                <button type="submit">Submit</button>
+                <button id="submit-btn" type="submit">Submit</button>
             </div>
         </form>
+        <div id="training" style="text-align: center">
+            <p></p>
+            <div style="text-align: center">
+                <button id="next-btn" type="button">Next</button>
+                <button id="restart-btn" type="button">Take Quiz Again</button>
+            </div>
+        </div>
     </div>
     <script src="assets/js/script.js"></script>
 </body>

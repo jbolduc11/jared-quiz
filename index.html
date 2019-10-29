@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js"></script>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Quiz</h1>
+        <form id="quiz" onsubmit="gradeQuiz(event)">
+            <ol class="questions">
+                <li>Imagine that the interest rate on your high-yield savings account is 2% per year and inflation is 3% per year. After 1 year, how much would you be able to buy with the money in this account?<br>
+                    <input type="radio" id="question1" name="question1" value="a">
+                    <label for="question1">(a) More than today</label>
+                    <input type="radio" id="question1" name="question1" value="b">
+                    <label for="question1">(b) Exactly the same</label>
+                    <input type="radio" id="question1" name="question1" value="c">
+                    <label for="question1">(c) Less than today</label>
+                    <input type="radio" id="question1" name="question1" value="d">
+                    <label for="question1">(d) I don't know</label>
+                </li>
+
+	        <li>Suppose you take out a $10,000 loan that charges a 10% compounding interest rate for a period of five years. Assuming you made minimum payments, how much interest would you expect to pay over the course of five years?<br>
+                    <input type="radio" id="question2" name="question2" value="a">
+                    <label for="question1">(a) Answer goes here</label>
+                </li>
+
+                <li>If interest rates fall, what will typically happen to bond prices?<br>
+                    <input type="radio" id="question3" name="question3" value="a">
+                    <label for="question1">(a) Answer goes here</label>
+                </li>
+
+                <li>Compared to owning a single company's stock, owning a stock ETF is...<br>
+                    <input type="radio" id="question4" name="question4" value="a">
+                    <label for="question1">(a) Answer goes here</label>
+                </li>
+
+                <li>Suppose you have $1,000 invested and earn 5% per year compounded annually. If you didn't withdraw or add any money, how many years would it take for the amount you own to double?<br>
+                    <input type="radio" id="question5" name="question5" value="a">
+                    <label for="question1">(a) Answer goes here</label>
+                </li>
+            </ol>
+            <div id="results"></div>
+            <div style="text-align: center">
+                <button type="submit">Submit</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -48,6 +48,6 @@ function gradeQuiz(event) {
     } 
         
     const results = document.getElementById('results');
-    results.innerHTML = `${begin} you've completed your financial knowledge assessment! You got <strong>${score}/5</strong> correct which means your financial knowledge is ${compare}`;
+    results.innerHTML = `${begin} You've completed your financial knowledge assessment! You got <strong>${score}/5</strong> correct which means your financial knowledge is ${compare}. This score will help us develop your personalized plan to get your financial knowledge right.`;
     results.style.display = 'block';
 }

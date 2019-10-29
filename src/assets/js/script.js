@@ -1,5 +1,5 @@
 function gradeQuiz(event) {
-    event.preventDefault(); // prevent actual form submission and page reload
+    event.preventDefault(); // prevent actual form submission (so we don't cause the page to reload)
 
     const submitBtn = document.querySelector('button');
     submitBtn.addEventListener('click', () => {location.reload(true)}); // reload page
@@ -7,9 +7,8 @@ function gradeQuiz(event) {
 
     const answerKey  = ['c', 'c', 'a', 'a', 'b'],
           answers = document.querySelectorAll('input:checked');
-    if (answers.length === 0) document.querySelector('ol').className += ' incorrect';
-    
     let score = 0;
+
     for (var i = 0; i < answers.length; i++) {
         if (answers[i].value !== answerKey[i]) {
             answers[i].parentElement.className = 'incorrect';
@@ -17,7 +16,6 @@ function gradeQuiz(event) {
             score++;
         }
     }
-    
 
     let begin = '',
         compare = '';

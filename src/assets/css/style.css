@@ -7,7 +7,7 @@
 }
 body {
     
-    background-color:#201747;
+    background-color:#009ACE;
     }
 .image {
     display: block;
@@ -19,12 +19,12 @@ body {
 
 h1 { 
     text-align: center;
-    color: rgb(234, 233, 245);
+    color: #201747;
     }
 button {
     border-radius: 15px;
     padding: 10px 28px;
-    background-color: #FFFFFF;
+    background-color: whitesmoke;
     color: black;
 }
 .questions li {
@@ -35,7 +35,7 @@ button {
     margin-top: 30px;
 }
 li {
-    color: #009ACE
+    color: whitesmoke;
 }
 input { 
         position: relative;
@@ -55,6 +55,6 @@ label { font-weight: normal;
     font-size: 24px;
     margin-bottom: 10px;
     text-align: center;
-    color: #FFFFFF;
+    color: whitesmoke;
 }
 
